@@ -1,5 +1,6 @@
 package org.lessons.java.oop;
 
+import java.util.Arrays;
 
 public class Main {
 
@@ -18,6 +19,15 @@ public class Main {
 		System.out.printf("- SALDO DISPONIBILE ---> %.3f€ \n",bankAccountPersonal.getBalance());
 		bankAccountPersonal.setLessBalance(5.000);
 		System.out.printf("- SALDO DISPONIBILE ---> %.3f€ \n",bankAccountPersonal.getBalance());
+		System.out.println("");
+		
+		//SNACK3
+		System.out.println("---------- SNACK 3 --------");
+		RegistroStudenti classStudents = new RegistroStudenti();
+		classStudents.setClassStudents(3);
+		//METODO CHE PERMETTE DI STAMPARE L'ARRAY COME UNA OGGETTO LISTA
+		System.out.println("- CLASSE STUDENTI ---> " + Arrays.toString(classStudents.getClassStudents()));
+		
 	}
 
 }
